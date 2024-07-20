@@ -28,7 +28,9 @@ Set up environment variables:
 Create a .env file in the root directory and add the following:
 
 PORT=3000
+
 MONGODB_URI=your_mongodb_connection_string
+
 SESSION_SECRET=your_session_secret
 
 Start the application:
