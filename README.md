@@ -1,7 +1,9 @@
 Technologies Used:
 
 Node.js: For building the server-side application and handling asynchronous operations.
+
 Express.js: As the web application framework to manage routes, middleware, and server-side logic.
+
 MongoDB: For the database to store product details, user information, and order data.
 
 Features:
@@ -19,7 +21,6 @@ git clone https://github.com/yourusername/kaagaz.git
 
 Install dependencies:
 
-cd kaagaz
 npm install
 
 Set up environment variables:
