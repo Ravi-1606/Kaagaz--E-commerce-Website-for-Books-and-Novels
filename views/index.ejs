@@ -1,0 +1,51 @@
+<%- include('./partials/header') %>
+
+<% if (error && error.length > 0) { %>
+    <div class="absolute top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 rounded-md bg-red-500 shadow-lg">
+        <span class="inline-block text-white font-semibold">
+            <%= error %>
+        </span>
+    </div>
+<% } %>
+
+<div class="w-full h-screen flex">
+    
+    <div class="w-1/2 flex items-center justify-center h-screen px-6 bg-gradient-to-br from-teal-100 to-teal-300">
+        <div class="w-full max-w-md bg-white shadow-xl rounded-lg p-8">
+            <h3 class="text-4xl font-bold text-gray-800 mb-4">Welcome to <span class="text-teal-500">Kaagaz</span></h3>
+            <h4 class="text-2xl text-gray-600 mb-6">Create Your Account</h4>
+            <form autocomplete="off" action="/users/register" method="post">
+                <input
+                    class="bg-gray-100 block w-full px-4 py-3 border-[1px] rounded-md mb-4 border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-300"
+                    type="text" placeholder="Full Name" name="fullname" required>
+                <input
+                    class="bg-gray-100 block w-full px-4 py-3 border-[1px] rounded-md mb-4 border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-300"
+                    type="email" placeholder="Email" name="email" required>
+                <input
+                    class="bg-gray-100 block w-full px-4 py-3 border-[1px] rounded-md mb-4 border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-300"
+                    type="password" placeholder="Password" name="password" required>
+                <input class="px-5 py-3 rounded-full mt-2 bg-teal-500 text-white font-semibold cursor-pointer hover:bg-teal-600 transition"
+                    type="submit" value="Create My Account">
+            </form>
+        </div>
+    </div>
+
+   
+    <div class="w-1/2 flex items-center justify-center h-screen px-6">
+        <div class="w-full max-w-md bg-white shadow-xl rounded-lg p-8">
+            <h4 class="text-2xl font-semibold text-gray-700 mb-6">Login to Your Account</h4>
+            <form autocomplete="off" action="/users/login" method="post">
+                <input
+                    class="bg-gray-100 block w-full px-4 py-3 border-[1px] rounded-md mb-4 border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-300"
+                    type="email" placeholder="Email" name="email" required>
+                <input
+                    class="bg-gray-100 block w-full px-4 py-3 border-[1px] rounded-md mb-4 border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-300"
+                    type="password" placeholder="Password" name="password" required>
+                <input class="px-5 py-3 rounded-full mt-2 bg-teal-500 text-white font-semibold cursor-pointer hover:bg-teal-600 transition"
+                    type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer') %>
