@@ -21,7 +21,7 @@ This repository contains the front-end and back-end code for an animated e-comme
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/kaagaz.git
+   git clone https://github.com/Ravi-1606/kaagaz.git
    
 2. **Navigate to the project directory:**
    ```bash
